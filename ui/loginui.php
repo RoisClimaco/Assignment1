@@ -1,10 +1,9 @@
+<div class = "bg">
 <div class="container h-100 loginPadding">
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
 				<div class="d-flex justify-content-center">
-					<div class="brand_logo_container">
-						<img src="https://cdn.freebiesupply.com/logos/large/2x/pinterest-circle-logo-png-transparent.png" class="brand_logo" alt="Logo">
-					</div>
+					<h2>Login</h2>
 				</div>
 				<div class="d-flex justify-content-center form_container">
 					<form role="form" method="post" action="login.php">
@@ -34,3 +33,4 @@
 			</div>
 		</div>
 	</div>
+</div>
