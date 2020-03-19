@@ -1,5 +1,5 @@
-<br>
 <div class="bg">
+  <br>
 <div class = "container h-500 register">
   <div class = "d-flex justify-content-center h-100">
   <form role="form" method="post" action="register.php">
