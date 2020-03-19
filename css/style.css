@@ -26,6 +26,13 @@
     color: white;
 }
 
+.bg{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/bg.jpg");
+  background-size:100% auto;
+  background-position: bottom;
+  height: 100vh;
+}
+
 .brand_logo_container {
   position: absolute;
   height: 170px;
