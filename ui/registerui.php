@@ -1,4 +1,5 @@
 <br>
+<div class="bg">
 <div class = "container h-500 register">
   <div class = "d-flex justify-content-center h-100">
   <form role="form" method="post" action="register.php">
@@ -47,5 +48,6 @@ By Signing up, I am agreeing to WIS' policy & terms
 
     ?>
   </div>
+</div>
 </div>
 </div>
