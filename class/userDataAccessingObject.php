@@ -15,9 +15,9 @@ public function addUser(User $newUser){
                                     . $newUser->getEmailAddress() . "', '"
                                     . $newUser->getFirstName() . "', '"
                                     . $newUser->getLastName() . "') ";
-   $result = mysqli_query($connection, $query);
-   echo $query;
-  $error =  (mysqli_error($connection));
+  $result = mysqli_query($connection, $query);
+  echo $query;
+  $error = (mysqli_error($connection));
   mysqli_close($connection);
   return $error;
 }
@@ -33,11 +33,10 @@ public function searchUser(User $oldUser){
        while($row2 = mysqli_fetch_row($result)){
          return $row2[0].":".$row2[1];
        }
-
      }
-     }
+   }
   return -9;
   mysqli_close($connection);
-}
+  }
 }
 ?>

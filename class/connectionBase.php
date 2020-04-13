@@ -2,8 +2,8 @@
 
 class connectionBase {
 private $host = "localhost";
-private $userName  = "root";
-private $userPassword  ="";
+private $userName = "root";
+private $userPassword = "";
 private $database = "dbwissystem";
 
   protected function retrieveConnection(){
