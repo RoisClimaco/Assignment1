@@ -2,17 +2,14 @@
 /**
  *
  */
-class Validator
-{
+class Validator {
 
   private $fields = [];
-  function __construct($fields)
-  {
+  function __construct($fields) {
     $this->fields = $fields;
   }
 
-  public function validateLogin()
-  {
+  public function validateLogin() {
       $validationErrors = [];
 
       if (!filter_var($this->fields['email'], FILTER_VALIDATE_EMAIL)) {
@@ -21,8 +18,7 @@ class Validator
       return $validationErrors;
   }
 
-  public function validatePassword()
-  {
+  public function validatePassword() {
       $validationErrors = [];
 
       if (empty($this->fields['password']) || mb_strlen($this->fields['password']) < 8) {
@@ -50,8 +46,7 @@ class Validator
       return $validationErrors;
   }
 
-  public function validateRegister()
-  {
+  public function validateRegister() {
       $validationErrors = [];
          if (empty($this->fields['firstname']) || mb_strlen($this->fields['firstname']) < 2) {
            $validationErrors['firstname'] = 'First Name Incorrect length should be not less 2.';
@@ -91,10 +86,7 @@ class Validator
         $validationErrors['password'] = 'Passwords do not match.';
       }
 
-
-
       return $validationErrors;
-
   }
 
 }

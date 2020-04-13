@@ -7,7 +7,7 @@ class userDataAccessObject extends connectionBase {
 public function __construct(){
 }
 
-public function addUser(User $newUser){
+public function addUser(User $newUser) {
    $connection = $this->retrieveConnection();
    $query = "INSERT INTO `tbluser` (`Username`, `Password`,`EmailAddress`,`FirstName`,`LastName`) VALUES ('"
                                     . $newUser->getUsername() . "', '"
@@ -22,7 +22,7 @@ public function addUser(User $newUser){
   return $error;
 }
 
-public function searchUser(User $oldUser){
+public function searchUser(User $oldUser) {
    $connection = $this->retrieveConnection();
    $query = "SELECT `password` FROM `tbluser` WHERE `username` = '" . $oldUser->getUsername() . "'" ;
    $result = mysqli_query($connection, $query);
