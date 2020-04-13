@@ -22,11 +22,6 @@
             <li class="nav-item">
               <a class="nav-link" id="navbar-link" href="login.php">Login</a>
             </li>
-            <!--
-            <li class="nav-item">
-              <a class="nav-link" id="navbar-link" href="new.php">What's new</a>
-            </li>
-          -->
             <li class="nav-item">
               <a class="nav-link" id="navbar-link" href="register.php">Register</a>
             </li>

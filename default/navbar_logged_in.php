@@ -22,12 +22,6 @@
             <li class="nav-item">
               <a class="nav-link" id="navbar-link" href="logout.php">Logout</a>
             </li>
-            <!--
-            <li class="nav-item">
-              <a class="nav-link" id="navbar-link" href="new.php">What's new</a>
-            </li>
-          -->
-
           </ul>
         <!-- Collapsible content -->
 
