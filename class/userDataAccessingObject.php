@@ -7,6 +7,17 @@ class userDataAccessObject extends connectionBase {
 public function __construct(){
 }
 
+/**
+ *Function: addUser()
+ *Input:	User
+ *Output:	String
+ *
+ *Example:
+ *1. $userDataAccessObject->addUser();
+ *		- calls the addUser method of the object userDataAccessObject.
+ *    - requires for the User Object to be populated with data
+ *    - returns empty when successful
+ */
 public function addUser(User $newUser) {
    $connection = $this->retrieveConnection();
    $query = "INSERT INTO `tbluser` (`Username`, `Password`,`EmailAddress`,`FirstName`,`LastName`) VALUES ('"
@@ -22,6 +33,18 @@ public function addUser(User $newUser) {
   return $error;
 }
 
+/**
+ *Function: searchUser()
+ *Input:	User
+ *Output:	String
+ *
+ *Example:
+ *1. $userDataAccessObject->searchUser();
+ *		- calls the searchUser method of the object userDataAccessObject.
+ *    - requires for the User Object to be populated with data
+ *    - returns userId when successful
+ *    - returns -9 as string when error occured
+ */
 public function searchUser(User $oldUser) {
    $connection = $this->retrieveConnection();
    $query = "SELECT `password` FROM `tbluser` WHERE `username` = '" . $oldUser->getUsername() . "'" ;

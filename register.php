@@ -2,6 +2,7 @@
 require_once 'class/validator.php';
 require_once 'class/user.php';
 require_once 'class/userDataAccessingObject.php';
+require_once 'class/urlDirector.php';
 
 session_start();
 $fields = $_POST;
@@ -10,14 +11,14 @@ if (!empty($_POST['lastname'])) {
   $validationErrors = $validator->validateRegister();
   if (empty($validationErrors)) {
     $user = new User();
-    $user->setUsername($fields['username']);
-    $user->setEmailAddress($fields['email']);
-    $user->setPassword(password_hash($fields['password'].strtolower($fields['username']),PASSWORD_DEFAULT));
-    $user->setFirstName($fields['firstname']);
-    $user->setLastName($fields['lastname']);
+    $user->setUsername($fields['txtUsername']);
+    $user->setEmailAddress($fields['txtEmail']);
+    $user->setPassword(password_hash($fields['txtPassword'].strtolower($fields['txtUsername']),PASSWORD_DEFAULT));
+    $user->setFirstName($fields['txtFirstname']);
+    $user->setLastName($fields['txtLastname']);
     $dao = new userDataAccessObject();
     if (empty($dao->addUser($user))){
-      header("Location: index.php");
+      header("Location: ".urlDirector::$loginURL);
     } else {
       $validationErrors['Register'] = 'Email Address already Taken.';
     }

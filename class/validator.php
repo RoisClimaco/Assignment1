@@ -1,14 +1,32 @@
 <?php
-/**
- *
- */
 class Validator {
 
   private $fields = [];
+  /**
+	 *Function: __construct()
+	 *Input:	$fields
+	 *Output:	N/A
+	 *
+	 *Example:
+	 *1. $validator = new Validator($_POST);
+	 *		- creates an instance of the validator object with the $_POST data inputted
+	 */
   function __construct($fields) {
     $this->fields = $fields;
   }
 
+
+  /**
+	 *Function: validateLogin()
+	 *Input:	N/A
+	 *Output:	String Array
+	 *
+	 *Example:
+	 *1. $validator->validateLogin();
+	 *		- calls the validateLogin method of the object validator.
+	 *    - requires to have email as a POST field when object is initialised
+   *    - returns a String Array of Errors
+	 */
   public function validateLogin() {
       $validationErrors = [];
 
@@ -18,6 +36,17 @@ class Validator {
       return $validationErrors;
   }
 
+  /**
+	 *Function: validatePassword()
+	 *Input:	N/A
+	 *Output:	String Array
+	 *
+	 *Example:
+	 *1. $validator->validatePassword();
+	 *		- calls the validatePassword method of the object validator.
+	 *    - requires to have password and repeat_password as a POST field when object is initialised
+   *    - returns a String Array of Errors
+	 */
   public function validatePassword() {
       $validationErrors = [];
 
@@ -46,6 +75,17 @@ class Validator {
       return $validationErrors;
   }
 
+  /**
+	 *Function: validateRegister()
+	 *Input:	N/A
+	 *Output:	String Array
+	 *
+	 *Example:
+	 *1. $validator->validateRegister();
+	 *		- calls the validateRegister method of the object validator.
+	 *    - requires to have firstname, lastname, email, password and confirmPassword as a POST field when object is initialised
+   *    - returns a String Array of Errors
+	 */
   public function validateRegister() {
       $validationErrors = [];
          if (empty($this->fields['firstname']) || mb_strlen($this->fields['firstname']) < 2) {

@@ -1,4 +1,5 @@
 <?php
+require_once 'class/urlDirector.php';
 session_start();
 
 include 'default/headerbase.php';

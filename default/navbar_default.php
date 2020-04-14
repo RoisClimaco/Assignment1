@@ -2,7 +2,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navigationbar">
 
         <!-- Navbar brand -->
-        <a class="navbar-brand" href="index.php">Welcome Institute of Studies</a>
+        <a class="navbar-brand" href="<?php echo urlDirector::$homeURL?>">Welcome Institute of Studies</a>
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -16,14 +16,14 @@
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
             <li>
-              <a class="nav-link" href="index.php">Home
+              <a class="nav-link" href="<?php echo urlDirector::$homeURL?>">Home
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="navbar-link" href="login.php">Login</a>
+              <a class="nav-link" id="navbar-link" href="<?php echo urlDirector::$loginURL?>">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="navbar-link" href="register.php">Register</a>
+              <a class="nav-link" id="navbar-link" href="<?php echo urlDirector::$registrationURL?>">Register</a>
             </li>
 
           </ul>
