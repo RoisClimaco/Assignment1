@@ -1,3 +1,8 @@
+<!--
+Author: Rolando Isaac Climaco
+Date: 04/2020
+Purpose: Header of the application
+-->
 <!DOCTYPE html>
 <html lang="en">
 

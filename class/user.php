@@ -1,4 +1,9 @@
 <?php
+/**
+ *Author: Rolando Isaac Climaco
+ *Date: 04/2020
+ *Purpose: User class is to be used by the application for data handling
+ */
   class User {
     private $userId;
     private $username;

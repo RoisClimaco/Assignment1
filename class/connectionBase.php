@@ -1,5 +1,9 @@
 <?php
-
+/**
+ *Author: Rolando Isaac Climaco
+ *Date: 04/2020
+ *Purpose: Connection base will be called by files that requires interaction with the database
+ */
 class connectionBase {
 private $host = "localhost";
 private $userName = "root";

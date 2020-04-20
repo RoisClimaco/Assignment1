@@ -1,4 +1,9 @@
 <?php
+/**
+ *Author: Rolando Isaac Climaco
+ *Date: 04/2020
+ *Purpose: Validator checks the fields submitted by the user if it is compliant with the standards of the application
+ */
 class Validator {
 
   private $fields = [];

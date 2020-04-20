@@ -1,3 +1,8 @@
+<!--
+Author: Rolando Isaac Climaco
+Date: 04/2020
+Purpose: Navigation bar when the user is logged in
+-->
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navigationbar">
   <!-- Navbar brand -->

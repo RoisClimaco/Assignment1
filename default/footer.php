@@ -1,3 +1,8 @@
+<!--
+Author: Rolando Isaac Climaco
+Date: 04/2020
+Purpose: Footer of the application
+-->
 <br>
 <hr>
 <br>

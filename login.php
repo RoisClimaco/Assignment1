@@ -4,6 +4,11 @@ require_once 'class/user.php';
 require_once 'class/userDataAccessingObject.php';
 require_once 'class/urlDirector.php';
 
+/**
+ *Author: Rolando Isaac Climaco
+ *Date: 04/2020
+ *Purpose: Login Logic
+ */
 session_start();
 $fields = $_POST;
 if (!empty($_POST['log_username'])) {

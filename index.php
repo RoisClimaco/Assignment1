@@ -1,4 +1,9 @@
 <?php
+/**
+ *Author: Rolando Isaac Climaco
+ *Date: 04/2020
+ *Purpose: Homepage Logic
+ */
 require_once 'class/urlDirector.php';
 session_start();
 

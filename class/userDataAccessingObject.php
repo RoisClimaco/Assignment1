@@ -1,7 +1,11 @@
 <?php
 require_once 'class/connectionBase.php';
 require_once 'class/user.php';
-
+/**
+ *Author: Rolando Isaac Climaco
+ *Date: 04/2020
+ *Purpose: UserDataAccessObject uses connection base and user class to input data in the database
+ */
 class userDataAccessObject extends connectionBase {
 
 public function __construct(){
